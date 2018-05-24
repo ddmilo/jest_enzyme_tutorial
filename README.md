@@ -185,7 +185,7 @@ export default App;
 
 Your browser should now display the `<button>` we made, and when clicked, the text display of `"HELLO"`.
 
-![alt text](./public/images/browser_hello.png "browser_hello")
+![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/browser_hello.PNG "browser_hello")
 
 Visually this may not seem like much, but it's more than enough to start writing our first test. You have to be able to break apart components and functionality to the smallest detail and to look at them from different perspectives. That knowledge will help you write great unit tests.
 
@@ -251,7 +251,7 @@ it('should render a single <button /> element', () => {
 
 Let's run our tests again with `npm run test`. Our terminal should display the following:
 
-![alt text](./public/images/test_success_2.png "test_success_2")
+![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_success_1.PNG "test_success_2")
 
 Congrats! You've writted your first test, but how do we know that it's actually testing correctly and not giving a false positive. Easy. In your `App.js` comment the line that contains the button element.
 
@@ -291,7 +291,7 @@ export default App;
 
 Then run `npm run test`. It should then give you a failing test.
 
-![alt text](./public/images/test_fail_1.png "test_fail_1")
+![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_fail_1.PNG "test_fail_1")
 
 When working on large projects the number of tests can add up, making it a bit confusing to find a specific test against a large list. This is where `describe` can come in handy.
 `describe` creates a block that groups together several related tests in one "test suite". This is used to clean large lists of tests to easily distinguish between different testing suite.
@@ -303,7 +303,7 @@ describe('<ComponentNameHere />', () => {
 ```
 When using `npm run test`, your terminal should look similar to this:
 
-![alt text](./public/images/test_suites.png "test_suites")
+![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_suites.PNG "test_suites")
 
 See how my tests for my `<App />` component and my `<Link />` component are separated neatly? That's the power of a `describe` function.
 
@@ -313,7 +313,7 @@ That should do it for this tutorial. This is barely scratching the surface of us
 
 I hope you learned a thing or two. Until next time.
 
-      - Dan
+
 
 
 ## Built With
