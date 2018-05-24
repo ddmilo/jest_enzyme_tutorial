@@ -251,7 +251,7 @@ it('should render a single <button /> element', () => {
 
 Let's run our tests again with `npm run test`. Our terminal should display the following:
 
-![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_success_1.PNG "test_success_2")
+![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_success_2.PNG "test_success_2")
 
 Congrats! You've writted your first test, but how do we know that it's actually testing correctly and not giving a false positive. Easy. In your `App.js` comment the line that contains the button element.
 
