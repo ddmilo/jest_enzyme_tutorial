@@ -74,6 +74,7 @@ To run our tests, do the following in your terminal:
   ```
 
   After a few seconds, the following should appear in your terminal:
+  
   ![alt text](https://github.com/ddmilo/jest_enzyme_tutorial/blob/master/public/images/test_success_1.PNG "Successful Test")
 
   Congratulations, you've ran your first successful test!
