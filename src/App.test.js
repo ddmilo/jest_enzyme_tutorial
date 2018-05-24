@@ -11,30 +11,9 @@ import Link from './components/Link'
 //   ReactDOM.unmountComponentAtNode(div);
 // });
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// For unit testing we will be using Jest and Enzyme.
-//Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.
-//Enzyme's API is meant to be intuitive and flexible by mimicking jQuery's API for DOM manipulation and traversal.
-// Jest is built in with create-react-app so no further configuration is needed as far as Jest goes
-// The first step in configuring your Testing environment starts with simple npm installations
-//    npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
-// This will install the following dependencies
-//    Enzyme
-//    Enzyme Adapter
-//    React Test Renderer
-
-// setupTests.js stuff
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// describe(name, fn) creates a block that groups together several related tests in one "test suite". 
-// This is used mainly to clean up code to easily differentiate separate test suites.
-// This isn't required - you can just write the test blocks directly at the top level.
-// But this can be handy if you prefer your tests to be organized into groups.
-// In this walkthrough, I separated the tests written for the App component and the Link component into two different test suites.
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+describe('<App />', () => {
+  // Unit Tests Here
+})
 
 describe('<App />', () => {
   it('should render one <Link /> component', () => {
@@ -76,3 +55,29 @@ describe('<Link />', () => {
     expect(wrapper.find('a').text().length).toBeGreaterThan(0);
   })
 })
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// For unit testing we will be using Jest and Enzyme.
+//Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.
+//Enzyme's API is meant to be intuitive and flexible by mimicking jQuery's API for DOM manipulation and traversal.
+// Jest is built in with create-react-app so no further configuration is needed as far as Jest goes
+// The first step in configuring your Testing environment starts with simple npm installations
+//    npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
+// This will install the following dependencies
+//    Enzyme
+//    Enzyme Adapter
+//    React Test Renderer
+
+// setupTests.js stuff
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// describe(name, fn) creates a block that groups together several related tests in one "test suite". 
+// This is used mainly to clean up code to easily differentiate separate test suites.
+// This isn't required - you can just write the test blocks directly at the top level.
+// But this can be handy if you prefer your tests to be organized into groups.
+// In this walkthrough, I separated the tests written for the App component and the Link component into two different test suites.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

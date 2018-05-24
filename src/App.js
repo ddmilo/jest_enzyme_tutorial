@@ -14,11 +14,11 @@ class App extends Component {
     })
   }
   render() {
-    const foo = this.state.pressed
+    const buttonState = this.state.pressed
     return (
       <div className="App">
 
-        {foo ?
+        {buttonState ?
           (<h1>HELLO</h1>) : (null) 
         }
         
